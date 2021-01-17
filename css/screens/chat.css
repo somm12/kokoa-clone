@@ -1,5 +1,5 @@
 #chat-screen {
-  background-color: #abc1d1;
+  background-color: #abc1d2;
   height: 1000vh;
 }
 #chat-screen .status-bar,
@@ -8,20 +8,121 @@
   width: 100%;
   top: 0;
   box-sizing: border-box;
-  background-color: #abc1d1;
+  background-color: #abc1d2;
 }
 .main-chat {
-  margin-top: 120px;
+  margin-top: 110px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .chat__timestamp {
   color: rgb(238, 234, 228);
-  text-align: center;
+
+  font-weight: 400;
+  background-color: #92a4b2;
+  padding: 10px 15px;
+  border-radius: 22px;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+.message-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 40%;
+  margin-right: 15px;
+}
+.message__author {
+  opacity: 0.9;
+  font-size: 15px;
+  margin-bottom: 8px;
+  display: block;
   font-weight: 500;
-  background-color: rgb(100, 102, 102);
-  padding: 3px 0px;
+}
+.message__info {
+  display: flex;
+  align-items: flex-end;
+}
+.message__bubble {
+  background-color: white;
+  padding: 8px 13px;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  margin-right: 5px;
+  font-weight: 500;
+}
+.message__time {
+  opacity: 0.8;
+  font-size: 13px;
+}
+.message-row--own {
+  justify-content: flex-end;
+}
+.message-row--own .message__bubble {
+  background-color: var(--yellow);
+  border-top-right-radius: 0px;
+  border-top-left-radius: 15px;
+  margin-left: 5px;
+  margin-right: 0px;
+}
+.message-row--own .message__info {
+  flex-direction: row-reverse;
+}
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px;
+  align-items: center;
+  box-sizing: border-box;
+}
+.reply input {
+  padding-left: 10px;
+  height: 30px;
+  width: 100%;
   border-radius: 20px;
-  width: 60%;
+  border: var(--main-border);
+}
+.reply .reply__column:first-child {
+  width: 10%;
+}
+.reply .reply__column:last-child {
+  width: 90%;
+  position: relative;
+}
+.reply__column:last-child > i,
+.reply__column:last-child button {
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+}
+.reply__column:last-child > i {
+  right: 35px;
+  top: 9px;
+}
+.reply__column:last-child button {
+  background-color: var(--yellow);
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  right: -4px;
+}
+.reply__column button:focus,
+.reply__column button:active {
+  outline: none;
+}
+.reply i {
+  opacity: 0.5;
+}
+.reply__column button i {
+  opacity: 1;
 }
