@@ -1,6 +1,10 @@
 .icon-row {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  row-gap: 25px;
 }
 .icon-row_icon {
   display: flex;
@@ -24,6 +28,7 @@
   margin-top: 30px;
   border-top: var(--main-border);
   padding-top: 20px;
+  margin-bottom: 80px;
 }
 .more-suggestions__title {
   margin-bottom: 20px;

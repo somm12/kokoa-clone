@@ -2,6 +2,7 @@
   margin-right: 5px;
 }
 .status-bar {
+  z-index: 99;
   position: fixed;
   top: 0;
   margin-bottom: 30px;

@@ -1,4 +1,6 @@
 .alt-header {
+  background-color: white;
+  z-index: 99;
   margin-top: 20px;
   padding: var(--horizontal-space);
   margin-bottom: 15px;
