@@ -1,6 +1,6 @@
 #chat-screen {
-  background-color: #abc1d2;
-  height: 100vh;
+  background-color: #e8d7fa;
+  height: 1000vh;
 }
 #chat-screen .status-bar,
 #chat-screen .alt-header {
@@ -8,8 +8,9 @@
   width: 100%;
   top: 0;
   box-sizing: border-box;
-  background-color: #abc1d2;
+  background-color: #e8d7fa;
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -63,15 +64,12 @@
   margin-bottom: 20px;
 }
 
-.message-row:nth-child(even) {
+.message-row:not(.message-row--own) {
   animation: showmessagerow-friend 1s linear;
-  /* animation-delay: 0.3s; */
 }
 .message-row--own {
-  /* animation-delay: 1s; */
   justify-content: flex-end;
   animation: showmessagerow-own 1s linear;
-  /* transform: translateX(250px); */
 }
 .message-row img {
   width: 50px;
@@ -102,9 +100,9 @@
   opacity: 0.8;
   font-size: 13px;
 }
-/* .message-row--own {
-  justify-content: flex-end;
-} */
+.message__bubble i {
+  color: var(--yellow);
+}
 .message-row--own .message__bubble {
   background-color: var(--yellow);
   border-top-right-radius: 0px;

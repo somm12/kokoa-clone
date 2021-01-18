@@ -6,6 +6,10 @@
   display: flex;
   align-self: center;
   justify-content: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-sizing: border-box;
 }
 .alt-header__column {
   width: 33%;

@@ -37,12 +37,13 @@
 }
 .open-post__title {
   font-weight: 600;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 .open-post__hastags {
   text-transform: uppercase;
   opacity: 0.6;
   font-weight: 500;
+  margin-bottom: 5px;
 }
 .open-post__members {
   display: flex;
@@ -65,7 +66,7 @@
   background-color: var(--gray);
 }
 .open-post__members-status {
-  color: #ffb0e0;
+  color: var(--yellow);
   font-weight: 500;
 }
 .open-post__photo {

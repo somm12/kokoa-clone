@@ -11,6 +11,7 @@
   justify-content: center;
   padding: 5px 3px;
   box-sizing: border-box;
+  background-color: #f6aebc;
 }
 .status-bar__column {
   width: 33%;
@@ -27,4 +28,19 @@
 }
 .status-bar__column .fa-battery-full {
   margin: 0px 5px;
+}
+@keyframes status-bar-thunder {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.status-bar__column:last-child i:last-child {
+  color: rgb(255, 238, 0);
+  animation: status-bar-thunder 1.5s linear infinite;
 }

@@ -1,6 +1,7 @@
 .user-component {
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  border-radius: 20px;
 }
 .user-component,
 .user-component__column:first-child {
@@ -59,9 +60,18 @@
   color: red;
 }
 .user-component:nth-child(2) {
-  border-bottom: var(--main-border);
   padding-bottom: 10px;
 }
 .user-component:first-child {
   padding-top: 10px;
+}
+.main-screen a:last-child .user-component {
+  margin-bottom: 80px;
+}
+
+.user-component:hover {
+  box-shadow: rgba(121, 121, 121, 0.747) 1px 1px 3px;
+}
+.friends-screen__channel hr {
+  border: 0.1px solid rgba(0, 0, 0, 0.2);
 }
